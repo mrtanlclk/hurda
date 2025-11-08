@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Small helper so fixed navbar doesn't cover page content */
+body {
+	padding-top: 70px; /* adjust if you change navbar height */
+}
+
+/* You can add additional global styles here */
+// Then import Bootstrap

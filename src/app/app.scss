@@ -1,0 +1,84 @@
+/* Styles specific to app sections */
+
+/* The hero background now applies only to .hero-wrap (behind the H1) */
+#anasayfa {
+	position: relative;
+}
+
+/* full-width hero area behind the h1 */
+.hero-wrap {
+	position: relative;
+	background-image: url('/assets/hurda-ana-sayfa.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 3.5rem 0; /* adjust vertical size of the background band */
+	display: block;
+}
+.hero-wrap::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.45);
+	pointer-events: none;
+}
+.hero-wrap .container { position: relative; z-index: 2; }
+.hero-wrap h1 { color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.6); margin: 0; }
+
+@media (max-width: 767px) {
+	#anasayfa { min-height: 50vh; padding-top: 3rem; padding-bottom: 3rem; }
+	#anasayfa h1 { font-size: 1.5rem; }
+}
+
+/* Thumbnail gallery styles */
+.thumb-grid .ratio { overflow: hidden; }
+.thumb-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* On small screens ensure thumbnails stack (Bootstrap col-12 already does) */
+
+/* Misyonumuz background */
+#misyonumuz {
+	position: relative;
+	color: #fff;
+	background-image: url('/assets/restore.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 40vh;
+	display: flex;
+	align-items: center;
+}
+
+#misyonumuz::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.38);
+	pointer-events: none;
+}
+
+#misyonumuz .container {
+	position: relative;
+	z-index: 2;
+}
+
+#misyonumuz h2, #misyonumuz h3 {
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	#misyonumuz { min-height: 30vh; padding-top: 2rem; padding-bottom: 2rem; }
+}
+
+/* Footer mobile adjustments */
+.footer-links li { list-style: none; }
+.footer-links a { display: inline-block; padding: 6px 8px; }
+@media (max-width: 767px) {
+	.footer-links { width: 100%; justify-content: center; }
+	.footer-links li { width: 100%; text-align: center; }
+}
