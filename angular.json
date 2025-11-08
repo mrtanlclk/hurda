@@ -29,7 +29,9 @@
             ],
             "styles": [
               "src/styles.scss"
-            ]
+            ],
+            "outputPath": "dist/hurda",
+            "baseHref": "/mrtanlclk/"
           },
           "configurations": {
             "production": {
