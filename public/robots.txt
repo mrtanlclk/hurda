@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ankasanmetal.com//sitemap.xml
+# Replace https://ankasanmetal.com/ with your real domain
